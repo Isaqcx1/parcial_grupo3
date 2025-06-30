@@ -1,0 +1,109 @@
+/*Encabezado*/
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 11px 400px;
+    background-color: #000;
+    font-size: 1em;
+}
+
+.menu {
+    display: flex;
+    gap: 75px;
+}
+
+.link {
+    font-size: 1.9em;
+    color: white;
+    text-decoration: none;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #ffde59;
+}
+
+.logo img {
+    height: 150px;
+}
+
+
+
+/*pagina 1*/
+
+.reservaSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f9f9f4;
+
+  }
+  
+  .reservaText {
+    padding: 100px;
+    flex: 1;
+    max-width: 880px;
+    margin-top: 50px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-size: 1.4rem; 
+    line-height: 1.8;   
+  }
+  
+  .titulo {
+    color: #4b5826;
+    font-weight: bold;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+  }
+  
+  .boton {
+    background: none;
+    border: none;
+    color: #4b5826;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 450px;
+    font-size: 1.5rem;
+  }
+  .reservaImg {
+    flex:1;
+    max-width: 880px;
+  }
+  .reservaImg img {
+    padding: none;
+    width: 100%;
+  }
+  
+
+/*footer*/
+.footer {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; 
+    background-color: #333;
+    color: #eee;
+    padding: 40px 60px;
+  }
+
+
+  .footerCenter {
+    flex: 700px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+  }
+  .footerLogo {
+    width: 200px;
+    margin-bottom: 8px;
+  }
+  

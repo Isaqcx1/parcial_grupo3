@@ -1,0 +1,58 @@
+/*Encabezado*/
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 11px 400px;
+    background-color: #000;
+    font-size: 1em;
+}
+
+.menu {
+    display: flex;
+    gap: 75px;
+}
+
+.link {
+    font-size: 1.9em;
+    color: white;
+    text-decoration: none;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #ffde59;
+}
+
+.logo img {
+    height: 150px;
+}
+
+/*footer*/
+.footer {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; 
+    background-color: #333;
+    color: #eee;
+    padding: 40px 60px;
+  }
+
+
+  .footerCenter {
+    flex: 700px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+  }
+  .footerLogo {
+    width: 200px;
+    margin-bottom: 8px;
+  }
+  
