@@ -1,6 +1,8 @@
-import styles from "../components/componente2.module.css"
+import styles from "../css/componente2.module.css"
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../img/logo.png';
+
+import img9 from '../img/img9.png';
 
 export function Contactos() {
     //recurso
@@ -42,6 +44,39 @@ export function Contactos() {
                 </div>
 
             </nav>
+
+
+            <div className={styles.contactoSection}>
+                <div className={styles.contactoImg}>
+                    <img src={img9}/>
+                </div>
+
+                <div className={styles.contactoInfo}>
+                    <h3 className={styles.subtitulo}>Contacto</h3>
+                    <p>+51 928 645 456</p>
+
+                    <h3 className={styles.subtitulo}>Dirección</h3>
+                    <p>Av. Valle Sereno 145<br />Pueblo Libre, Lima (Perú)</p>
+
+                    <h3 className={styles.subtitulo}>Reservas</h3>
+                    <p>reservas@saborquieto.pe</p>
+
+                    <h3 className={styles.subtitulo}>Social Media</h3>
+                    <p>
+                        @SaborQuieto<br />
+                        @ComidaConRaíces<br />
+                        @SaboresDelSilencio<br />
+                        @MesaConAlma
+                    </p>
+
+                    <h3 className={styles.subtitulo}>Comunicaciones y Proyectos</h3>
+                    <p>historias@saborquieto.pe</p>
+                </div>
+            </div>
+
+
+            
+
 
 
             <div className={styles.footer}>

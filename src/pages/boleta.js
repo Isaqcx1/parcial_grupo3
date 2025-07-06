@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "../components/boleta.module.css";
+import styles from "../css/boleta.module.css";
 import logo from "../img/logo.png";
 import imgn from "../img/imagn.png";
 

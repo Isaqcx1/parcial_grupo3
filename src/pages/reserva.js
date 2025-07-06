@@ -1,4 +1,4 @@
-import styles from "../components/componente3.module.css"
+import styles from "../css/componente3.module.css"
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../img/logo.png';
 

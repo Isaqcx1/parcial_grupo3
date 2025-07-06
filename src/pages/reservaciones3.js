@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "../components/componentereserva1.module.css";
+import styles from "../css/componentereserva1.module.css";
 import logo from "../img/logo.png";
 
 export function Reservaciones3() {
@@ -33,28 +33,28 @@ export function Reservaciones3() {
     setFechaSeleccionada(fecha);
     const fechaFormateada = formatearFecha(fecha);
 
-    
-      navigate("/reservaciones4", {
-        state: {
-          sedeSeleccionada,
-          cantidadPersonas,
-          fechaSeleccionada: fechaFormateada,
-        },
-      });
-    
+
+    navigate("/reservaciones4", {
+      state: {
+        sedeSeleccionada,
+        cantidadPersonas,
+        fechaSeleccionada: fechaFormateada,
+      },
+    });
+
   };
 
   return (
     <div className={styles.fondo}>
-      
+
       <div className={styles.logoTop}>
         <img src={logo} />
       </div>
 
 
       <div className={styles.pasos}>
-        <span>Sedes</span>
-        <span>Personas</span>
+        <span onClick={() => navigate("/reservaciones1")} className={styles.mouse}>Sedes</span>
+        <span onClick={() => navigate("/reservaciones2")} className={styles.mouse}>Personas</span>
         <span className={styles.activo}>Fecha</span>
         <span>Hora</span>
         <span>Datos</span>

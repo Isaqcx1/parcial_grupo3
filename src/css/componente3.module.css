@@ -31,6 +31,57 @@
     height: 150px;
 }
 
+
+
+/*pagina 1*/
+
+.reservaSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #e5cc99d3;
+
+  }
+  
+  .reservaText {
+    padding: 100px;
+    flex: 1;
+    max-width: 880px;
+    margin-top: 50px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-size: 1.4rem; 
+    line-height: 1.8;   
+  }
+  
+  .titulo {
+    color: #4b5826;
+    font-weight: bold;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+  }
+  
+  .boton {
+    background: none;
+    border: none;
+    color: #4b5826;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 450px;
+    font-size: 1.5rem;
+  }
+  .reservaImg {
+    flex:1;
+    max-width: 880px;
+  }
+  .reservaImg img {
+    padding: none;
+    width: 100%;
+  }
+  
+
 /*footer*/
 .footer {
     font-family: "Josefin Sans", sans-serif;

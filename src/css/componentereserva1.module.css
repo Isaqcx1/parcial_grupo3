@@ -112,7 +112,15 @@
     border: 2px solid white;
 }
 
+.mouse {
+    cursor: pointer;
+}
+.mouse:hover {
+    color: #ffde59; /* o el color hover que usas */
+}
+
 /*Personas*/
+
 
 .dropdown {
     margin-top: 10px;

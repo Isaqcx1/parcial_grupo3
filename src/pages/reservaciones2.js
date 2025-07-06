@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "../components/componentereserva1.module.css";
+import styles from "../css/componentereserva1.module.css";
 import logo from "../img/logo.png";
 
 export function Reservaciones2() {
@@ -37,7 +37,7 @@ export function Reservaciones2() {
 
 
             <div className={styles.pasos}>
-                <span>Sedes</span>
+                <span onClick={() => navigate("/reservaciones1")} className={styles.mouse}>Sedes</span>
                 <span className={styles.activo}>Personas</span>
                 <span>Fecha</span>
                 <span>Hora</span>

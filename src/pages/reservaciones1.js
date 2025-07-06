@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../components/componentereserva1.module.css";
+import styles from "../css/componentereserva1.module.css";
 import logo from "../img/logo.png";
 
 export function Reservaciones1() {

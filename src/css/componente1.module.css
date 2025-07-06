@@ -59,8 +59,6 @@
 }
 
 
-/*parte2*/
-
 
 .infoSection {
     display: flex;
@@ -123,11 +121,152 @@
 }
 
 
+/*parte 2*/
+
+.menuPrincipal {
+    background-color: #e5cc99d3;
+  }
+  
+  .imgSuperior {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  
+  .contenidoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 80px;
+    gap: 50px;
+  }
+  
+  .menuText {
+    flex: 1;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.9;
+  }
+  
+  .tituloMenu {
+    color: #4b5826;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    margin-bottom: 10px;
+  }
+  
+  .subtexto {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .plato p {
+    margin-bottom: 15px;
+  }
+  
+  .plato span {
+    float: right;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .mas {
+    font-style: italic;
+    font-weight: bold;
+    color: #4b5826;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .menuImage img {
+    margin: 80px;
+    width: 650px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+/*parte 3*/
+
+.serviciosPrincipal {
+    background-color: #e5cc99d3;
+}
+
+.serviciosImagenSuperior {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.contenidoServicios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 80px;
+}
+
+.serviciosText {
+    flex: 1;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.serviciosTitulo {
+    color: #4b5826;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yesteryear", cursive;
+    margin-bottom: 10px;
+}
+
+.serviciosGrid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.servicioItem {
+    max-width: 250px;
+    text-align: center;
+}
+
+.servicioIcono {
+    font-size: 3rem;
+    color: #4b5826;
+    margin-bottom: 15px;
+}
+
+.servicioTitulo {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b5826;
+    margin-bottom: 10px;
+}
+
+.servicioTexto {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+
 /*El footer xd*/
 
 
 
 .footer {
+
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.2rem;
     display: flex;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "../components/componentereserva1.module.css";
+import styles from "../css/componentereserva1.module.css";
 import logo from "../img/logo.png";
 
 export function Reservaciones4() {
@@ -23,16 +23,16 @@ export function Reservaciones4() {
   const handleSelectHora = (hora) => {
     setHoraSeleccionada(hora);
 
-    
-      navigate("/reservaciones5", {
-        state: {
-          sedeSeleccionada,
-          cantidadPersonas,
-          fechaSeleccionada,
-          horaSeleccionada: hora,
-        },
-      });
-    
+
+    navigate("/reservaciones5", {
+      state: {
+        sedeSeleccionada,
+        cantidadPersonas,
+        fechaSeleccionada,
+        horaSeleccionada: hora,
+      },
+    });
+
   };
 
   return (
@@ -43,14 +43,14 @@ export function Reservaciones4() {
 
 
       <div className={styles.pasos}>
-        <span>Sedes</span>
-        <span>Personas</span>
-        <span>Fecha</span>
+        <span onClick={() => navigate("/reservaciones1")} className={styles.mouse}>Sedes</span>
+        <span onClick={() => navigate("/reservaciones2")} className={styles.mouse}>Personas</span>
+        <span onClick={() => navigate("/reservaciones3")} className={styles.mouse}>Fecha</span>
         <span className={styles.activo}>Hora</span>
         <span>Datos</span>
       </div>
 
- 
+
       <div className={styles.main}>
         <h2 className={styles.titulo}>Selecciona una hora</h2>
         <div className={styles.gridHoras}>
@@ -59,7 +59,7 @@ export function Reservaciones4() {
               key={index}
               className={`${styles.horaBox} ${horaSeleccionada === hora ? styles.selected : ""}`}
               onClick={() => handleSelectHora(hora)}
-            
+
             >
               {hora}
             </div>

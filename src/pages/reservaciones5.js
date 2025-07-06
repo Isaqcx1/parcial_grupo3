@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import styles from "../components/componentereserva1.module.css";
+import styles from "../css/componentereserva1.module.css";
 import logo from "../img/logo.png";
 
 export function Reservaciones5() {
@@ -36,9 +36,9 @@ export function Reservaciones5() {
     }
 
     if (!correo.includes("@")) {
-        alert("El correo debe contener al menos un '@'.");
-        return;
-      }
+      alert("El correo debe contener al menos un '@'.");
+      return;
+    }
 
     navigate("/boleta", {
       state: {
@@ -57,14 +57,14 @@ export function Reservaciones5() {
   return (
     <div className={styles.fondo}>
       <div className={styles.logoTop}>
-        <img src={logo}  />
+        <img src={logo} />
       </div>
 
       <div className={styles.pasos}>
-        <span>Sedes</span>
-        <span>Personas</span>
-        <span>Fecha</span>
-        <span>Hora</span>
+        <span onClick={() => navigate("/reservaciones1")} className={styles.mouse}>Sedes</span>
+        <span onClick={() => navigate("/reservaciones2")} className={styles.mouse}>Personas</span>
+        <span onClick={() => navigate("/reservaciones3")} className={styles.mouse}>Fecha</span>
+        <span onClick={() => navigate("/reservaciones4")} className={styles.mouse}>Hora</span>
         <span className={styles.activo}>Datos</span>
       </div>
 

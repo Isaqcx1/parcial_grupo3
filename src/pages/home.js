@@ -1,5 +1,5 @@
 
-import styles from "../components/componente1.module.css"
+import styles from "../css/componente1.module.css"
 import { Link, useNavigate } from "react-router-dom";
 
 //imagenes
@@ -9,6 +9,10 @@ import img8 from '../img/img8.jpg';
 import img9 from '../img/img9.png';
 import img10 from '../img/img10.png';
 import img11 from '../img/img11.png';
+import img7 from '../img/img7.jpeg';
+import asterisco from '../img/asterisco.png';
+import img3 from '../img/img3.jpeg';
+import img4 from '../img/img4.jpeg';
 
 
 
@@ -88,6 +92,82 @@ export function Home() {
 
             </div>
 
+
+            <div className={styles.menuPrincipal}>
+                <img src={img7} className={styles.imgSuperior} />
+
+                <div className={styles.contenidoMenu}>
+                    <div className={styles.menuText}>
+                        <h2 className={styles.tituloMenu}>Menús Principales</h2>
+                        <p className={styles.subtexto}>Lo que servimos no busca complicarse.</p>
+                        <p className={styles.subtexto}>Son sabores de casa, hechos con calma, pensados para quedarse contigo un rato más.</p>
+
+                        <div className={styles.plato}>
+                            <p><strong>Pollo guisado con arroz y ensalada</strong> – Pierna de pollo cocida en fondo de verduras, con arroz blanco y ensalada fresca (tomate, lechuga, cebolla). <span>S/18</span></p>
+                            <p><strong>Bistec a lo pobre</strong> – Bistec de res a la plancha con huevo frito, arroz, plátano frito y papas doradas. <span>S/22</span></p>
+                            <p><strong>Sopa de nuestro huerto casera</strong> – Sopa espesa de fideos, albahaca, papa, zapallo y menestras. Servida con pan o arroz a elección. <span>S/14</span></p>
+                            <p><strong>Filete de pescado al ajillo</strong> – Filete de pescado frito en mantequilla con ajo, acompañado de arroz con choclo y yuca sancochada. <span>S/20</span></p>
+                            <p><strong>Ají de gallina</strong> – Guiso cremoso de pollo deshilachado en salsa de ají amarillo, leche y pan, servido con arroz y aceituna negra. <span>S/19</span></p>
+                        </div>
+
+                        <p className={styles.mas}>Más</p>
+                    </div>
+
+                    <div className={styles.menuImage}>
+                        <img src={img3} />
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.serviciosPrincipal}>
+                <img src={img4} className={styles.serviciosImagenSuperior} />
+
+                <div className={styles.contenidoServicios}>
+                    <div className={styles.serviciosText}>
+                        <h2 className={styles.serviciosTitulo}>Nuestros Servicios</h2>
+                        <p className={styles.subtexto}>No solo cocinamos.</p>
+                        <p className={styles.subtexto}>Cuidamos el momento, el sabor, el detalle. Ofrecemos platos honestos, café lento, y pan que se parte entre amigos.</p>
+
+                        <div className={styles.serviciosGrid}>
+                            <div className={styles.servicioItem}>
+                                <div className={styles.servicioIcono}>🍞</div>
+                                <div className={styles.servicioTitulo}>Desayunos</div>
+                                <div className={styles.servicioTexto}>
+                                    Pan caliente, fruta fresca y café lento.<br />
+                                    Empezar el día no debería sentirse apurado.
+                                </div>
+                            </div>
+
+                            <div className={styles.servicioItem}>
+                                <div className={styles.servicioIcono}>🍲</div>
+                                <div className={styles.servicioTitulo}>Personalizada</div>
+                                <div className={styles.servicioTexto}>
+                                    Si tienes un antojo, una idea o una necesidad,<br />
+                                    lo hablamos y lo cocinamos juntos.
+                                </div>
+                            </div>
+
+                            <div className={styles.servicioItem}>
+                                <div className={styles.servicioIcono}>🥗</div>
+                                <div className={styles.servicioTitulo}>Almuerzo</div>
+                                <div className={styles.servicioTexto}>
+                                    Platos que no necesitan explicación.<br />
+                                    Hechos con calma, servidos con alma.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
             <div className={styles.footer}>
                 <div className={styles.footerSection}>
                     <p>Política de privacidad</p>
@@ -96,7 +176,7 @@ export function Home() {
                 </div>
 
                 <div className={styles.footerCenter}>
-                    <img src={logo}className={styles.footerLogo} />
+                    <img src={logo} className={styles.footerLogo} />
                     <div>
                         <p>Av. El Sol 145, La Molina, Lima</p>
                         <p>+51 912 345 678</p>
